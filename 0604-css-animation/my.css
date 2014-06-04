@@ -1,0 +1,36 @@
+div {
+	width: 200px;
+	height: 200px;
+	background-color: coral;
+	-webkit-animation: square2circle 2s 1s infinite cubic-bezier(0.120, 0.095, 0.020, 0.960) alternate;
+	-o-animation: square2circle 2s 1s infinite cubic-bezier(0.120, 0.095, 0.020, 0.960) alternate;
+	animation: square2circle 2s 1s infinite cubic-bezier(0.120, 0.095, 0.020, 0.960) alternate;
+}
+
+@-webkit-keyframes square2circle {
+	0% { 
+		border-radius: 0 0 0 0;
+		background:coral;
+		transform:rotate(0deg); 
+	}
+	25% {
+		border-radius: 50% 0 0 0;
+		background:darksalmon; 
+		transform:rotate(45deg);
+	}
+	50% {
+		border-radius: 50% 50% 0 0;
+		background:indianred;
+		transform:rotate(90deg);
+	}
+	75% {
+		border-radius: 50% 50% 50% 0;
+		background:lightcoral;
+		transform:rotate(135deg);
+	}
+	100% {
+		border-radius: 50%;
+		background:darksalmon;
+		transform:rotate(180deg);
+	}
+}
