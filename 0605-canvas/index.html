@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Canvas</title>
+	<style>
+	body {
+		margin: 0 auto;
+		max-width: 960px;
+	}
+	#mycanvas {
+		//width: 500px;
+		//height: 500;
+		border: 1px solid;
+	}
+	</style>
+</head>
+<body>
+	<h1>Canvas</h1>
+	<canvas id="mycanvas" width="500" height="500">Canvas not supported!</canvas>
+	<script>
+	function drawTree(context) {
+		context.save()
+		context.translate(130,250)
+		context.lineWidth = 4
+		context.lineJoin = 'round'
+		context.strokeStyle = '#3810b4'
+
+		context.beginPath();
+		context.moveTo(-25,-50);
+		context.lineTo(-10,-80);
+		context.lineTo(-20,-80)
+		context.lineTo(-5,-110)
+		context.lineTo(-15,-110)
+
+		context.lineTo(0,-140)
+		context.lineTo(15,-110)
+		context.lineTo(5,-110)
+		context.lineTo(20,-80)
+		context.lineTo(10,-80)
+		context.lineTo(25,-50)
+
+		context.closePath()
+
+		context.stroke()
+		
+		context.fillStyle="#8c1"
+		context.fill()
+
+		context.fillStyle="#663300"
+		context.fillRect(-5,-50,10,50)
+
+		context.restore()
+	}
+	function drawRoad(context) {
+		context.save()
+		context.translate(-10,350)
+		context.beginPath()
+
+		context.moveTo(	0,0)
+		context.quadraticCurveTo(170,-50,260,-190)
+		context.quadraticCurveTo(310,-250,510,-250)
+
+		context.strokeStyle ="#663300"
+		context.lineWidth = 20
+		context.stroke()
+		context.restore()
+	}
+
+	function drawDiagonal() {
+		var canvas = document.getElementById('mycanvas');
+		var context = canvas.getContext('2d');
+
+		drawTree(context)
+		drawRoad(context)
+		// context.beginPath();
+		// context.moveTo(70,140);
+		// context.lineTo(140,70);
+		// context.stroke();
+
+	}
+
+	window.addEventListener('load', drawDiagonal, true);
+	</script>
+</body>
+</html>

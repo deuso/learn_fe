@@ -1,0 +1,55 @@
+body {
+	background: #272822;
+}
+
+.page {
+	background: #fff;
+	width: 450px;
+	height: 550px;
+	margin: 50px;
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+
+}
+
+.page h2 {
+	padding: 85px 0 0 20px;
+	font: 400 35px/1.5 Helvetica, sans-serif;
+}
+
+.page p {
+	padding: 10px 20px;
+	font: 16px/1.5 Helvetica, sans-serif;
+	color: #4b4b4b;
+}
+
+.fold {
+	position: relative;
+	-webkit-box-shadow: 5px 5px 5px rgba(0,0,0,0.8);
+	-moz-box-shadow: 5px 5px 5px rgba(0,0,0,0.8);
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.8);
+}
+
+.fold:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-bottom: 50px solid #eee;
+	border-left: 50px solid transparent;
+	-webkit-box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+	-moz-box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+}
+
+.fold:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-top: 49px solid #272822;
+	border-right: 49px solid transparent;
+}

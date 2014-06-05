@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>2 column layout</title>
+	<style>
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	body {
+		font-family: Geneva, Arial, "Helvetica Neue", Helvetica, sans-serif;
+		max-width: 960px;
+		margin: 0 auto;
+		border: solid #fff;
+	}
+	header, footer {
+		width: 960px;
+		height: 30px;
+		background-color: #edb30b;
+		text-align: center;
+		display: block;
+		font-size: 25px;
+	}
+	#container {
+		width: 960px;
+		margin: 10px 0;
+		overflow: hidden;
+	}
+	#main {
+		float: right;
+		width: 70%;
+		color: #fff;
+		background-color: #333;
+	}
+	#side {
+		float: left;
+		width: 30%;
+		color: #fff;
+		background-color: #999;
+	}
+	#main, #side {
+		margin-bottom: -9999px;
+		padding-bottom: 9999px;
+	}
+	#container:after {
+		display: block;
+		visibility: hidden;
+		clear: both;
+		font-size: 0;
+		line-height: 0;
+		content: "";
+	}
+	</style>
+</head>
+<body>
+	<header>My two column css layout page</header>
+	<div id="container">
+		<div id="main">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, hic, natus impedit ipsa molestiae inventore incidunt quae consectetur illo ducimus consequatur veritatis culpa delectus perspiciatis maxime? Dicta sed cum quaerat.</p>
+			<p>Rerum quod optio id distinctio doloribus magni minima placeat. Laboriosam, natus, recusandae maxime tempore dolor quia sequi molestiae. Ullam, suscipit omnis qui nisi fuga explicabo a vel optio repudiandae pariatur!</p>
+			<p>Vero, neque, reprehenderit numquam dignissimos voluptatibus saepe animi ex quas doloremque odio ipsum nostrum minus vel culpa libero totam at illum consequuntur accusamus nam facere veritatis eaque soluta dolore sunt!</p>
+			<p>Maiores, assumenda id itaque soluta odio minus dolor nisi velit quo corporis. Ut, vitae, iusto, voluptatem voluptates facere nobis porro exercitationem ex quia perferendis aperiam molestias atque reprehenderit nihil repellendus.</p>
+			<p>Quod ullam doloribus a magnam eum animi necessitatibus. Dolorem, ullam, minus, atque id at ut facere in dignissimos nemo cumque necessitatibus fugiat error. Repellendus, assumenda nisi quis suscipit et ab?</p>
+			<p>Illo, alias, deserunt atque excepturi distinctio ad tempore saepe beatae qui a error ex impedit. Corporis, mollitia, sit, itaque dicta voluptates nostrum unde porro architecto quis autem quibusdam consectetur commodi.</p>
+			<p>Facilis, dolorum, cumque, provident sed veniam ab iste eos blanditiis qui aut assumenda necessitatibus molestiae. Magnam, aut, odit quod modi eaque inventore voluptate. Repudiandae laudantium incidunt aperiam fugiat excepturi quo.</p>
+			<p>Autem, tempore, harum, itaque impedit assumenda aut dignissimos eos quia rem enim reiciendis architecto magni obcaecati fuga sed minima earum iusto porro provident temporibus velit ipsam quod vitae error beatae.</p>
+			<p>Dignissimos, ratione, exercitationem ullam dolor enim animi perferendis ea iure fugit nulla officia doloremque cumque. Non, asperiores, assumenda, alias labore numquam delectus iste quo ipsa voluptatem temporibus debitis eaque veniam.</p>
+			<p>Nesciunt nostrum maxime alias minus eligendi. Laudantium, nam, provident perferendis autem consequuntur iste beatae totam reprehenderit maiores itaque quia possimus eos eius quo eligendi assumenda ad voluptate aperiam commodi quae.</p>
+		</div>
+		<div id="side">
+			<ul>
+				<li id="li01">01</li>
+				<li id="li02">02</li>
+				<li id="li03">03</li>
+				<li id="li04">04</li>
+				<li id="li05">05</li>
+				<li id="li06">06</li>
+				<li id="li07">07</li>
+				<li id="li08">08</li>
+				<li id="li09">09</li>
+				<li id="li10">10</li>
+			</ul>
+		</div>
+	</div>
+	<footer></footer>
+</body>
+</html>
